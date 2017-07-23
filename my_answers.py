@@ -44,7 +44,7 @@ def cleaned_text(text):
     #Print all non-valid english characters to check if there is any character that shouldn't be a  non-valid english character
     #print(nonvalid_english_characters)
     #Based on the characters analysis the following define the final non-valid english characters
-    nonvalid_english_characters = ['/', '(', '"', '&', '%', '*', ')', '-', '$', '@', "'", '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'è', 'é',  'à', 'â']
+    nonvalid_english_characters = ['/', '\\', '\f', '\v', '\n', '\t', '\r', '|', '~', '`', '(', '{', '[', '"', '&', '%', '*', ')', '}', ']', '+', '=', '-', '_', '<', '>','$', '@', '^', '#', "'", '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'è', 'é',  'à', 'â']
     #Remove non-valid english characters from text 
     for i in range(0,len(nonvalid_english_characters)):
         text = text.replace(nonvalid_english_characters[i],'')
